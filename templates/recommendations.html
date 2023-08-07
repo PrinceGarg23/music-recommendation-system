@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Recommendations</title>
+    <link rel="stylesheet" type="text/css" href="in.css">
+</head>
+<body>
+    <h1>Music Recommendations for {{ song }}</h1>
+    <ul>
+        {% for recommendation in recommendations %}
+        <li>{{ recommendation }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
